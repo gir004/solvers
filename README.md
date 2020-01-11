@@ -13,6 +13,7 @@ or
 ``` bash
 python3 chess.py 8
 ```
+Yout can replace 8 with other length of board side.
 
 Output format:
 
