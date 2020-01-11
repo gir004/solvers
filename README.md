@@ -3,14 +3,14 @@
 ## Chess
 To run *chess.py* use:
 
-``` python3
+``` bash
 python3 chess.py
 8
 ```
 
 or
 
-``` python3
+``` bash
 python3 chess.py 8
 ```
 
