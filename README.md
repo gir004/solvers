@@ -28,7 +28,7 @@ Output format:
 ```
 
 ## Sudoku
-To run sudoku.py use:
+To run *sudoku.py* use:
 
 ``` python3
 python3 sudoku.py
