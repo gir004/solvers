@@ -3,14 +3,14 @@
 ## Chess
 To run *chess.py* use:
 
-``` bash
+```
 python3 chess.py
 8
 ```
 
 or
 
-``` bash
+```
 python3 chess.py 8
 ```
 Yout can replace 8 with other length of board side.
@@ -31,7 +31,7 @@ Output format:
 ## Sudoku
 To run *sudoku.py* use:
 
-``` python3
+```
 python3 sudoku.py
 ```
 And enter sudoku in format:
@@ -59,4 +59,31 @@ Output format:
 129|375|684
 756|498|312
 438|162|795
+```
+
+## Diagonals
+To run *diagonals.py* use:
+
+```
+python3 diagonals.py
+6
+```
+
+or
+
+```
+python3 chess.py 6
+```
+Yout can replace 6 with other length of board side.
+
+Output format:
+
+```
+|/| |/| |/|/|
+|/| |/| | |/|
+|/| |/|/| |/|
+|/| | |/| |/|
+|/| | |/| | |
+|/|/| |/|/|/|
+Total 21 diagonals
 ```
