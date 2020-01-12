@@ -17,28 +17,20 @@ for i in range(n):
     for j in range(n):
         m += l[i][j] + r[i][j] <= 1
 
-for i in range(n):
-    for j in range(n):
-        if i > 0:
-            m += l[i][j] + r[i - 1][j] <= 1
-            m += r[i][j] + l[i - 1][j] <= 1
-        if i < n - 1:
-            m += l[i][j] + r[i + 1][j] <= 1
-            m += r[i][j] + l[i + 1][j] <= 1
-        if j < 0:
-            m += l[i][j] + r[i][j - 1] <= 1
-            m += r[i][j] + l[i][j - 1] <= 1
-        if j < n - 1:
-            m += l[i][j] + r[i][j + 1] <= 1
-            m += r[i][j] + l[i][j + 1] <= 1
-        if i > 0 and j > 0:
-            m += l[i][j] + l[i - 1][j - 1] <= 1
-        if i > 0 and j < n - 1:
-            m += r[i][j] + r[i - 1][j + 1] <= 1
-        if i < n - 1 and j > 0:
-            m += r[i][j] + r[i + 1][j - 1] <= 1
-        if i < n - 1 and j < n - 1:
-            m += l[i][j] + l[i + 1][j + 1] <= 1
+for i in range(n - 1):
+    for j in range(n - 1):
+        m += l[i][j] + r[i][j + 1] <= 1
+        m += r[i][j] + l[i][j + 1] <= 1
+        m += l[i][j] + r[i + 1][j] <= 1
+        m += r[i][j] + l[i + 1][j] <= 1
+        m += l[i][j] + l[i + 1][j + 1] <= 1
+        m += r[i + 1][j] + r[i][j + 1] <= 1
+        if i == n - 2:
+            m += l[i + 1][j] + r[i + 1][j + 1] <= 1
+            m += r[i + 1][j] + l[i + 1][j + 1] <= 1
+        if j == n - 2:
+            m += l[i][j + 1] + r[i + 1][j + 1] <= 1
+            m += r[i][j + 1] + l[i + 1][j + 1] <= 1
 
 m.optimize()
 
