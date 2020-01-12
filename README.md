@@ -1,4 +1,4 @@
-# Solvers (made in SochiSirius2020)
+# Solvers (made in SochiSirius2020 by Tagir Khamitov)
 
 ## Chess
 To run *chess.py* use:
