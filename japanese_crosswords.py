@@ -14,11 +14,4 @@ for i in range(m):
 
 clauses = []
 
-
-def to_n(x, y):
-    return x * m + y + 1
-
-def from_n(x):
-    return (x - 1) / m, (x - 1) % m
-
 #TODO
