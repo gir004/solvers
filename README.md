@@ -87,3 +87,40 @@ Output format:
 |/|/| |/|/|/|
 Total 21 diagonals
 ```
+
+## 4 in row
+To run *4_in_row.py* use:
+```
+python3 4_in_row.py
+```
+And enter an example in format:
+```
+12 10
+X....X.XX.
+.X.XX...O.
+O.XO.X..OX
+..........
+.X........
+.OX...OO.X
+O..X....X.
+O..O..X...
+........X.
+OO....O.X.
+.OO......X
+OOO.O.X.XX
+```
+Output format:
+```
+XXOXOXOXXX
+XXOXXOXOOO
+OOXOXXXOOX
+OXOOOXOXXX
+OXXXOXOXOO
+XOXOXOOOXX
+OOXXXOXOXX
+OXOOOXXXOO
+XXOXOXOOXX
+OOXXOOOXXO
+XOOOXXXOOX
+OOOXOOXOXX
+```
