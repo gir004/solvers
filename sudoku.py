@@ -51,6 +51,7 @@ for i in range(n):
             clauses.append([to_n(i, j, field[i][j] - 1)])
 
 answer = pycosat.solve(clauses)
+print()
 if answer == 'UNSAT':
     print('UNSOLVABLE')
 else:
@@ -65,4 +66,4 @@ else:
                 print('|', end='')
         print()
         if i == 2 or i == 5:
-            print('-----------')
+            print('-' * 11)
