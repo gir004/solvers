@@ -18,7 +18,7 @@ for i in range(m):
 
 print('start solving')
 
-for t in range(1, n + 1):
+for t in range(n, 0, -1):
     print(t, '/', n)
     clauses = []
     for i in range(n):
@@ -29,7 +29,11 @@ for t in range(1, n + 1):
                 if i != j and g[i][j] == 1:
                     clauses.append([-(i * t + k + 1), -(j * t + k + 1)])
         clauses.append(node)
+    clauses.append([1])
+    for i in range(1, n):
+        clauses.append([-(i * t + 1)])
     answer = pycosat.solve(clauses)
-    if answer != 'UNSAT':
-        print('answer is', t)
+    if(answer == 'UNSAT'):
+        print('answer is', t + 1)
         break
+    
