@@ -138,3 +138,17 @@ e u2 v2
 ...
 ```
 Where n - number of vertices, m - number of edges, u<sub>i</sub> and v<sub>i</sub> - vertices connected with edge number i.
+
+## Graph coloring
+To run *graph_coloring.py* use:
+```
+python3 graph_coloring.py
+```
+And enter a graph in format:
+```
+p e n m
+e u1 v1
+e u2 v2
+...
+```
+Where n - number of vertices, m - number of edges, u<sub>i</sub> and v<sub>i</sub> - vertices connected with edge number i.
